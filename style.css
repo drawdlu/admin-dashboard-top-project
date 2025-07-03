@@ -10,6 +10,11 @@
     font-family: roboto, system-ui, Arial,Helvetica, sans-serif;
 }
 
+button {
+    font-family: inherit;
+    font-size: 100%;
+}
+
 a {
     color: black;
     text-decoration: none;
@@ -89,6 +94,7 @@ header {
     box-shadow: 0 4px 4px -4px lightgray;
     padding: var(--top-bottom) var(--left-right) 
              var(--top-bottom) var(--left-right);
+    font-weight: bold;
 
     display: grid;
     grid-template-rows: 1fr 2fr;
@@ -98,6 +104,7 @@ header {
 .profile-header {
     gap: 2rem;
     justify-self: flex-end;
+    padding-right: 10px;
 }
 
 .notification-bell, 
@@ -120,10 +127,6 @@ header {
     align-items: center;
 }
 
-.profile-header span {
-    font-weight: bold;
-}
-
 .greeting img {
     height: 4.5rem;
     width: 4.5rem;
@@ -135,7 +138,6 @@ header {
     display: grid;
     grid-template-rows: 1rem 1rem;
     gap: 6px;
-    font-weight: bold;
 }
 
 .greet span:first-child {
@@ -144,6 +146,31 @@ header {
 
 .greet span:last-child {
     font-size: 1.4rem;
+}
+
+.action {
+    justify-self: flex-end;
+    gap: 2rem;
+}
+
+.action button {
+    --top-bottom: .6rem;
+    --left-right: 1.5rem;
+    padding: var(--top-bottom) var(--left-right) var(--top-bottom) var(--left-right);
+    border-radius: 50px;
+    border: none;
+    background-color: rgba(25, 146, 212, 255);
+    color: white;
+    font-weight: bold;
+}
+
+.action button:active {
+    box-shadow: inset 8px 8px 8px 0 #1683be;
+    cursor: pointer;
+}
+
+.action button:hover {
+    background-color: #2f9cd8;
 }
 
 
