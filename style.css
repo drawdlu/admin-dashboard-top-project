@@ -26,17 +26,36 @@ nav {
     padding-top: 30px;
 }
 
-.navigation {
-    display: flex;
-    flex-direction: column;
-}
-
-.settings { 
+.navigation,
+.settings {
     display: flex;
     flex-direction: column;
 }
 
 header {
+    --top-bottom: 15px;
+    --left-right: 30px;
     box-shadow: 0 4px 4px -4px lightgray;
+    padding: var(--top-bottom) var(--left-right) 
+             var(--top-bottom) var(--left-right);
+
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
 }
+
+.top-header {
+    border-bottom: 1px solid black;
+    align-items: bottom;
+}
+
+.search,
+.profile-header, 
+.greeting, 
+.action {
+    display: flex;
+    align-items: center;
+}
+
+
 
