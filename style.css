@@ -228,8 +228,17 @@ main {
 }
 
 .action-icons img {
-    height: 2rem;
-    width: 2rem;
+    --size: 2rem;
+    height: var(--size);
+    width: var(--size);
+}
+
+.action-icons img:hover {
+    height: calc(var(--size) - .2rem);
+}
+
+.action-icons img:active {
+    height: calc(var(--size) - .3rem);
 }
 
 .announcements-content,
