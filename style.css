@@ -167,11 +167,11 @@ header {
 
 .action button:active {
     box-shadow: inset 8px 8px 8px 0 #1683be;
-    cursor: pointer;
 }
 
 .action button:hover {
     background-color: #2f9cd8;
+    cursor: pointer;
 }
 
 
@@ -235,6 +235,7 @@ main {
 
 .action-icons img:hover {
     height: calc(var(--size) - .2rem);
+    cursor: pointer;
 }
 
 .action-icons img:active {
