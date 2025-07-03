@@ -51,7 +51,8 @@ nav {
 }
 
 .nav-link a:hover {
-    color: red;
+    transition: .2s;
+    color: #0a3a54;
 }
 
 .nav-link img {
@@ -84,7 +85,7 @@ nav {
 
 header {
     --top-bottom: 15px;
-    --left-right: 30px;
+    --left-right: 80px;
     box-shadow: 0 4px 4px -4px lightgray;
     padding: var(--top-bottom) var(--left-right) 
              var(--top-bottom) var(--left-right);
@@ -94,18 +95,57 @@ header {
     grid-template-columns: 2fr 1fr;
 }
 
-.top-header {
-    border-bottom: 1px solid black;
-    align-items: bottom;
+.profile-header {
+    gap: 2rem;
+    justify-self: flex-end;
+}
+
+.notification-bell, 
+.search img {
+    height: 1.7rem;
+    width: 1.7rem;
+}
+
+.small-logo {
+    height: 2.7rem;
+    width: 2.7rem;
+    border-radius: 60px;
 }
 
 .search,
-.profile-header, 
-.greeting, 
+.greeting,
+.profile-header,
 .action {
     display: flex;
     align-items: center;
 }
+
+.profile-header span {
+    font-weight: bold;
+}
+
+.greeting img {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 60px;
+    margin-right: 25px;
+}
+
+.greet {
+    display: grid;
+    grid-template-rows: 1rem 1rem;
+    gap: 6px;
+    font-weight: bold;
+}
+
+.greet span:first-child {
+    font-size: .85rem;
+}
+
+.greet span:last-child {
+    font-size: 1.4rem;
+}
+
 
 /* Main */
 
